@@ -83,11 +83,16 @@
             <a class="btn" href="#sign-form">Start learning free!</a>
           </div>
           <div class="hero-img-box">
-            <img
-              class="hero-img"
-              src="src/content/img/hero.png"
-              alt="Photo of woman singing at home and her vocal teacher talking with her on video call"
-            />
+            <picture>
+              <source srcset="src/content/img/hero.webp" type="image/webp" />
+              <source srcset="src/content/img/hero.png" type="image/png" />
+
+              <img
+                class="hero-img"
+                src="src/content/img/hero.png"
+                alt="Photo of woman singing at home and her vocal teacher talking with her on video call"
+              />
+            </picture>
           </div>
         </div>
       </section>
@@ -330,7 +335,12 @@
             </form>
           </div>
           <div class="cta-img-box">
-            <img class="cta-img" src="src/content/img/call.jpg" alt="" />
+            <picture>
+              <source srcset="src/content/img/call.webp" type="image/webp" />
+              <source srcset="src/content/img/call.jpg" type="image/jpg" />
+
+              <img class="cta-img" src="src/content/img/call.jpg" alt="" />
+            </picture>
           </div>
         </div>
       </section>
