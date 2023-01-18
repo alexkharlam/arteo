@@ -1,5 +1,11 @@
 @use 'borderPlate';
 
+// fonts
+@font-face {
+  font-family: 'workSans';
+  src: url(../content/fonts/WorkSans-VariableFont_wght.ttf);
+}
+
 // VARIABLES
 $main-color: #5f3dc4;
 $main-color-shade-4: #432b89;
@@ -14,7 +20,7 @@ $dark-text: #333;
 $light-text: #666;
 
 body {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'workSans', sans-serif;
   font-size: 1rem;
 }
 
