@@ -127,7 +127,15 @@
 // mobile
 // below 601x
 
-@media (max-width: 38em) {
+@media (max-width: 42em) {
+  .sign-form-box {
+    align-items: flex-start;
+  }
+
+  .popup-form {
+    margin-top: 1.2rem;
+  }
+
   .container {
     padding-left: 2.4rem;
     padding-right: 2.4rem;
