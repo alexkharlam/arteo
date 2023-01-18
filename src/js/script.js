@@ -1,3 +1,5 @@
+const navMenu = document.querySelector('.header-box');
+
 // SLIDER
 
 const slider = document.querySelector('.slider');
@@ -55,6 +57,8 @@ window.addEventListener('hashchange', function (e) {
     showMessage("Links on the website doesn't work :)", 1.7);
     location.hash = '#1';
   }
+
+  navMenu.classList.remove('header-box-active');
 });
 
 const openForm = function () {
@@ -115,4 +119,11 @@ questionsContainer.addEventListener('click', function (e) {
     .querySelector('.explanation');
 
   explanation.classList.toggle('explanation-active');
+});
+
+// mobile nav
+const btnNav = document.querySelector('.toggle-nav');
+
+btnNav.addEventListener('click', function (e) {
+  navMenu.classList.toggle('header-box-active');
 });
