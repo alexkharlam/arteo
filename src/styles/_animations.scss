@@ -1,0 +1,17 @@
+@keyframes feature-toggler {
+  0% {
+    transform: translateY(0);
+  }
+  10% {
+    transform: translateY(-100%);
+    content: 'where';
+    // opacity: 0;
+  }
+  90% {
+    transform: translateY(-100%);
+    // opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

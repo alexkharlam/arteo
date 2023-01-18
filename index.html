@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="description" content="Description text is here" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- icons -->
+    <link
+      rel="shortcut icon"
+      href="src/content/favicons/favicon-32x32.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="src/content/favicons/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="manifest.webmanifest" />
+    <!-- css -->
+    <link rel="stylesheet" href="src/styles/index.scss" />
+    <!-- scripts -->
+    <script type="module" src="src/js/script.js"></script>
+    <title>Arteo - learn singing online</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-box container">
+        <div class="logo">
+          <img
+            class="logo-img"
+            src="src/content/img/LOGO.svg"
+            alt="Arteo's logo"
+          />
+        </div>
+        <ul class="main-nav">
+          <li><a class="main-nav-link" href="#">About us</a></li>
+          <li><a class="main-nav-link" href="#">Testimonials</a></li>
+          <li><a class="main-nav-link" href="#">Pricing</a></li>
+          <li><a class="main-nav-link" href="#">FAQ</a></li>
+          <li>
+            <a class="main-nav-cta" href="#sign-form">Become a student</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="success-message"></div>
+      <div class="sign-form-box">
+        <form class="form popup-form">
+          <label class="label" for="name">Name</label>
+          <input
+            class="input-form input-name"
+            type="text"
+            id="name"
+            placeholder="John"
+            required
+          />
+          <label class="label" for="email">Email adress</label>
+          <input
+            class="input-form"
+            type="email"
+            id="email"
+            placeholder="example@gmail.com"
+            required
+          />
+          <label class="label" for="tel">Phone number</label>
+          <input class="input-form type="tel" id="tel" placeholder="5911475646"
+          required />
+          <button class="btn form-btn" type="submit">Submit</button>
+          <ion-icon class="btn-close-form" name="close-outline"></ion-icon>
+        </form>
+      </div>
+      <section class="section-hero">
+        <div class="hero">
+          <div class="hero-text-box">
+            <h1 class="heading-primary">
+              Vocal school that will make you <span>sing</span> like an artist
+            </h1>
+            <p class="hero-description">
+              Learn from professionals with Arteo, regardless of your musical
+              experience, from anywhere in the world!
+            </p>
+            <a class="btn" href="#sign-form">Start learning free!</a>
+          </div>
+          <div class="hero-img-box">
+            <img
+              class="hero-img"
+              src="src/content/img/hero.png"
+              alt="Photo of woman singing at home and her vocal teacher talking with her on video call"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-features container">
+        <p class="sub-heading">How it works</p>
+        <h2 class="heading-secondary">Learning music is easier than ever!</h2>
+        <div class="features grid--3">
+          <!-- feature 1 -->
+          <div class="feature">
+            <ion-icon
+              class="feature-icon"
+              name="chatbubble-ellipses-outline"
+            ></ion-icon>
+            <p class="feature-heading">Teacher just for you</p>
+            <p class="feature-description">
+              We will select a teacher according to your interests and tastes in
+              music!
+            </p>
+          </div>
+          <!-- feature 2 -->
+          <div class="feature">
+            <ion-icon class="feature-icon" name="hourglass-outline"></ion-icon>
+            <p class="feature-heading">Learn when you want</p>
+            <p class="feature-description">
+              All classes are online, all you need to study is your smartphone
+              or laptop!
+            </p>
+          </div>
+          <!-- feature 3 -->
+          <div class="feature">
+            <ion-icon class="feature-icon" name="analytics-outline"></ion-icon>
+            <p class="feature-heading">Teaching methodology</p>
+            <p class="feature-description">
+              We have a clear learning plan prepared especially for you!
+            </p>
+          </div>
+        </div>
+
+        <h2 class="heading-tertiary align-center">
+          Hear What Arteo's Clients Say About Us
+        </h2>
+        <div class="slider">
+          <!-- slide 1 -->
+          <div class="slide slide--1">
+            <div class="testimonial">
+              <div class="testimonial-profile">
+                <img
+                  src="src/content/img/bo.jpg"
+                  alt="photo of a customer"
+                  class="testimonial-img"
+                />
+                <p class="testimonial-name">&mdash; Bo Jordan</p>
+              </div>
+              <blockquote class="testimonial-text">
+                I've been in Arteo for 3 months and I already feel like a much
+                better singer. I like rock music and, thanks to the teacher, I
+                have already learned a large number of rock songs
+              </blockquote>
+            </div>
+          </div>
+          <!-- slide 2 -->
+          <div class="slide slide--2">
+            <div class="testimonial">
+              <div class="testimonial-profile">
+                <img
+                  src="src/content/img/reese.jpg"
+                  alt="photo of a customer"
+                  class="testimonial-img"
+                />
+                <p class="testimonial-name">&mdash; Reese Aniston</p>
+              </div>
+              <blockquote class="testimonial-text">
+                Vocal lessons in Arteo helped me become more liberated and free,
+                now I sing all the time))
+              </blockquote>
+            </div>
+          </div>
+          <!-- slide 3 -->
+          <div class="slide slide--3">
+            <div class="testimonial">
+              <div class="testimonial-profile">
+                <img
+                  src="src/content/img/genry.jpg"
+                  alt="photo of a customer"
+                  class="testimonial-img"
+                />
+                <p class="testimonial-name">&mdash; Genry Jonson</p>
+              </div>
+              <blockquote class="testimonial-text">
+                I already had singing experience, and when I came to school, I
+                began to study according to a program specially designed for me.
+                It's great to sing my favourite songs on these lessons!
+              </blockquote>
+            </div>
+          </div>
+          <!-- btns -->
+          <button class="slider-btn slider-btn--left">&larr;</button>
+          <button class="slider-btn slider-btn--right">&rarr;</button>
+        </div>
+        <div class="see-more-box">
+          <a class="see-more" href="#beta">See more testimonials</a>
+        </div>
+      </section>
+
+      <section class="section-prices">
+        <div class="container">
+          <p class="sub-heading">prices</p>
+          <h2 class="heading-secondary">Here's our programs</h2>
+        </div>
+        <div class="pricing-plans grid--3 container">
+          <!-- plan 1 -->
+          <div class="pricing-plan">
+            <header class="plan-header">
+              <p class="plan-title">One lesson</p>
+              <p class="plan-price">25$</p>
+              <p class="plan-per-month">for 45 minute lesson</p>
+            </header>
+            <ul class="plan-list">
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>Study when you want!</p>
+              </li>
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>No need to pay every month</p>
+              </li>
+              <li class="plan-item">
+                <ion-icon
+                  class="opaced"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+              </li>
+              <li class="plan-item">
+                <ion-icon
+                  class="opaced"
+                  name="checkmark-circle-outline"
+                ></ion-icon>
+              </li>
+            </ul>
+            <div class="plan-subscribe">
+              <a href="#sign-form" class="btn plan-btn">Take first lesson</a>
+            </div>
+          </div>
+          <!-- plan 2 -->
+          <div class="pricing-plan pricing-plan--regular">
+            <header class="plan-header">
+              <p class="plan-title">Regular</p>
+              <p class="plan-price">160$</p>
+              <p class="plan-per-month">
+                per month. Only <span>20$</span> for lesson
+              </p>
+            </header>
+            <ul class="plan-list">
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>Study when you want!</p>
+              </li>
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>2 lessons per week</p>
+              </li>
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>1 lesson - 45 minutes</p>
+              </li>
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>Course in 5-6 months</p>
+              </li>
+            </ul>
+            <div class="plan-subscribe">
+              <a href="#sign-form" class="btn plan-btn">Take first lesson</a>
+            </div>
+          </div>
+          <!-- plan 3 -->
+          <div class="pricing-plan">
+            <header class="plan-header">
+              <p class="plan-title">intensive</p>
+              <p class="plan-price">250$</p>
+              <p class="plan-per-month">
+                per month. Only <span>15$</span> for lesson!
+              </p>
+            </header>
+            <ul class="plan-list">
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>Study when you want!</p>
+              </li>
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>4 lessons per week</p>
+              </li>
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>1 lesson - 45 minutes</p>
+              </li>
+              <li class="plan-item">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>Course in 3-4 months</p>
+              </li>
+            </ul>
+            <div class="plan-subscribe">
+              <a href="#sign-form" class="btn plan-btn">Take first lesson</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-cta">
+        <div class="cta">
+          <div class="form-box">
+            <h3 class="form-title">Get your first vocal lesson for free!</h3>
+            <form class="form form-state">
+              <label class="label" for="name-core">Name</label>
+              <input
+                class="input-form"
+                type="text"
+                id="name-core"
+                placeholder="John"
+                required
+              />
+              <label class="label" for="email-core">Email adress</label>
+              <input
+                class="input-form"
+                type="email"
+                id="email-core"
+                placeholder="example@gmail.com"
+                required
+              />
+              <label class="label" for="tel-core">Phone number</label>
+              <input
+                class="input-form"
+                type="tel"
+                id="tel-core"
+                placeholder="5911475646"
+                required
+              />
+              <button class="btn form-btn" type="submit">Sign up</button>
+            </form>
+          </div>
+          <div class="cta-img-box">
+            <img class="cta-img" src="src/content/img/call.jpg" alt="" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section-faq">
+        <div class="container">
+          <p class="sub-heading">not sure?</p>
+          <h2 class="heading-secondary">Most common questions</h2>
+        </div>
+        <div class="faq-box container">
+          <div class="question">
+            <button class="question-text">
+              <p class="pp">What learning program do you use?</p>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </button>
+            <p class="explanation">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+              laudantium quis illo hic ex optio animi aperiam in nemo pariatur
+              praesentium error necessitatibus, iure dolore exercitationem rerum
+              consequatur quasi. Minima.
+            </p>
+          </div>
+          <div class="question">
+            <button class="question-text">
+              <p class="pp">How much time i need to pass your program?</p>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </button>
+            <p class="explanation">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi
+              tempore labore quae aut iure at facere sint tempora perferendis,
+              delectus culpa, soluta assumenda quaerat error? Culpa velit
+              exercitationem optio assumenda!
+            </p>
+          </div>
+          <div class="question">
+            <button class="question-text">
+              <p class="pp">Is your first lesson free?</p>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </button>
+            <p class="explanation">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae,
+              sapiente eligendi. Aliquid incidunt mollitia, est cumque
+              necessitatibus deserunt corporis iste temporibus nam commodi vitae
+              amet neque unde. Magni, molestias sed. Lorem ipsum dolor sit amet
+              consectetur adipisicing elit. Fugit reiciendis ipsa earum optio,
+              deleniti eos eligendi velit soluta quae nesciunt.
+            </p>
+          </div>
+          <div class="question">
+            <button class="question-text">
+              <p class="pp">How often should i study?</p>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </button>
+            <p class="explanation">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+              laudantium quis illo hic ex optio animi aperiam in nemo pariatur
+              praesentium error necessitatibus, iure dolore exercitationem rerum
+              consequatur quasi. Minima.
+            </p>
+          </div>
+          <div class="question">
+            <button class="question-text">
+              <p class="pp">What do i need for online video calls?</p>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </button>
+            <p class="explanation">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+              laudantium quis illo hic ex optio animi aperiam in nemo pariatur
+              praesentium error necessitatibus, iure dolore exercitationem rerum
+              consequatur quasi. Minima.
+            </p>
+          </div>
+          <div class="question">
+            <button class="question-text">
+              <p class="pp">What if i don't have any experience?</p>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </button>
+            <p class="explanation">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+              laudantium quis illo hic ex optio animi aperiam in nemo pariatur
+              praesentium error necessitatibus, iure dolore exercitationem rerum
+              consequatur quasi. Minima.
+            </p>
+          </div>
+          <div class="question">
+            <button class="question-text">
+              <p class="pp">
+                Is there advanced program for people with vocal experience?
+              </p>
+              <ion-icon
+                class="arrow-down"
+                name="chevron-down-outline"
+              ></ion-icon>
+            </button>
+            <p class="explanation">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod
+              laudantium quis illo hic ex optio animi aperiam in nemo pariatur
+              praesentium error necessitatibus, iure dolore exercitationem rerum
+              consequatur quasi. Minima.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="big-tel container">
+        <p class="heading-tel">Want to ask something? Call us!</p>
+        <a class="tel-link" href="" type="tel:447975274957">+44 7975 274 957</a>
+      </div>
+      <div class="footer-nav grid--4 container">
+        <nav class="nav-col">
+          <p class="heading-footer">Contact us</p>
+          <div class="social-box">
+            <a href="#beta" class="social-link">
+              <ion-icon
+                class="social-icon instagram"
+                name="logo-instagram"
+              ></ion-icon>
+            </a>
+            <a href="#beta" class="social-link">
+              <ion-icon
+                class="social-icon twitter"
+                name="logo-twitter"
+              ></ion-icon>
+            </a>
+            <a href="#beta" class="social-link">
+              <ion-icon
+                class="social-icon facebook"
+                name="logo-facebook"
+              ></ion-icon>
+            </a>
+          </div>
+
+          <a class="footer-link" href="" type="mailto:arteo-contact@gmail.com"
+            >arteo-contact@gmail.com</a
+          >
+          <a class="footer-link" href="" type="tel:447975274957"
+            >+44 7975 274 957</a
+          >
+        </nav>
+        <nav class="nav-col">
+          <p class="heading-footer">About</p>
+          <a href="#beta" class="footer-link">About us</a>
+          <a href="#beta" class="footer-link">Partners</a>
+          <a href="#beta" class="footer-link">Privacy policy</a>
+          <a href="#beta" class="footer-link">For Business</a>
+        </nav>
+        <nav class="nav-col">
+          <p class="heading-footer">Arteo</p>
+          <a href="#" class="footer-link">How it works</a>
+          <a href="#" class="footer-link">Testimonials</a>
+          <a href="#" class="footer-link">Price</a>
+          <a href="#" class="footer-link">FAQ</a>
+        </nav>
+        <nav class="nav-col">
+          <a href="#sign-form" class="btn">Get free lesson!</a>
+        </nav>
+      </div>
+      <p class="copyright">Arteo © 2023 All rights reserved.</p>
+    </footer>
+    <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>

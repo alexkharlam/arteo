@@ -1,0 +1,19 @@
+{
+  "name": "arteo",
+  "version": "1.0.0",
+  "description": "Website",
+  "source": "index.html",
+  "scripts": {
+    "start": "parcel -p 8080",
+    "build": "parcel build"
+  },
+  "keywords": [],
+  "author": "Alex Kharlamov",
+  "license": "ISC",
+  "devDependencies": {
+    "@parcel/packager-raw-url": "^2.8.2",
+    "@parcel/transformer-sass": "^2.8.2",
+    "@parcel/transformer-webmanifest": "^2.8.2",
+    "parcel": "^2.8.2"
+  }
+}
