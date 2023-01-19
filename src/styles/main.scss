@@ -61,11 +61,7 @@
 // SECTION HERO
 // ***************************
 .section-hero {
-  background: linear-gradient(
-    to right,
-    general.$main-color-tilt-9,
-    general.$main-color-tilt-10
-  );
+  background: general.$main-color-tilt-10;
 
   padding-top: 4.8rem;
   padding-bottom: 9.6rem;
@@ -114,6 +110,7 @@
     font-weight: 600;
     margin-bottom: 1.6rem;
     color: #333;
+    line-height: 1.3;
   }
 
   .feature-description {
@@ -216,7 +213,7 @@
 .see-more:link,
 .see-more:visited {
   font-size: 1.8rem;
-  color: #777;
+  color: #666;
 
   &:hover {
     border-bottom: 1px solid #777;
@@ -276,7 +273,7 @@
 
   .plan-per-month {
     font-size: 1.6rem;
-    color: #777;
+    color: #555;
 
     span {
       font-weight: 600;
@@ -361,6 +358,7 @@
     font-size: 1.8rem;
     padding: 1.2rem 1.6rem;
     margin-bottom: 2.4rem;
+    border: none;
     background-color: #fff;
     &:focus {
       outline: 3px solid general.$main-color-tilt-8;
@@ -415,7 +413,7 @@
     padding: 2.4rem 2.4rem;
     cursor: pointer;
 
-    .pp {
+    .qustion-p {
       font-size: 2.4rem;
     }
 
@@ -611,9 +609,12 @@
   position: absolute;
   top: 0.2rem;
   right: 0.2rem;
-  color: general.$main-color-tilt-10;
   cursor: pointer;
   transition: all 0.2s;
+
+  .icon-close-form {
+    color: general.$main-color-tilt-10;
+  }
 
   &:hover {
     transform: scale(1.05);

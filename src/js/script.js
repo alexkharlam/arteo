@@ -49,6 +49,7 @@ init();
 location.hash = '';
 const form = document.querySelector('.sign-form-box');
 const message = document.querySelector('.success-message');
+const btnCloseForm = document.querySelector('.btn-close-form');
 
 window.addEventListener('hashchange', function (e) {
   e.preventDefault();
@@ -62,29 +63,34 @@ window.addEventListener('hashchange', function (e) {
 });
 
 const openForm = function () {
+  // opening form
   form.classList.add('form-box-active');
+  // focusing on the first input
   setTimeout(() => {
     document.querySelector('.input-name').focus();
   }, 100);
-  form.addEventListener('click', closeFormHandler);
+  // Closing form when close btn clicked
+  btnCloseForm.addEventListener('click', function (e) {
+    e.preventDefault();
+    closeForm();
+  });
+  // listening for the event of clicking outside of form
+  form.addEventListener('click', function (e) {
+    if (!e.target.closest('form')) closeForm();
+  });
+  // Listening for the event of clicking esc and closing form
   window.addEventListener('keydown', function (e) {
     if (e.key === 'Escape') closeForm();
   });
 };
 
+// closes form
 const closeForm = function () {
   form.classList.remove('form-box-active');
   location.hash = '#1';
 };
 
-const closeFormHandler = function (e) {
-  if (
-    e.target.classList.contains('btn-close-form') ||
-    !e.target.closest('form')
-  )
-    closeForm();
-};
-
+// listens to the submit
 document.querySelector('.popup-form').addEventListener('submit', function (e) {
   e.preventDefault();
   e.target.reset();
@@ -125,5 +131,6 @@ questionsContainer.addEventListener('click', function (e) {
 const btnNav = document.querySelector('.toggle-nav');
 
 btnNav.addEventListener('click', function (e) {
+  e.preventDefault();
   navMenu.classList.toggle('header-box-active');
 });
