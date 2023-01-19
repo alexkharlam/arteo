@@ -1,7 +1,6 @@
 const navMenu = document.querySelector('.header-box');
 
 // SLIDER
-
 const slider = document.querySelector('.slider');
 const slides = document.querySelectorAll('.slide');
 const btnLeft = document.querySelector('.slider-btn--left');
