@@ -37,8 +37,8 @@ const nextSlide = function () {
 function init() {
   gotoSlide(curSlide);
   slider.addEventListener('click', function (e) {
-    if (e.target.classList.contains('slider-btn--left')) return prevSlide();
-    if (e.target.classList.contains('slider-btn--right')) return nextSlide();
+    if (e.target.closest('.slider-btn--left')) return prevSlide();
+    if (e.target.closest('.slider-btn--right')) return nextSlide();
   });
 }
 
