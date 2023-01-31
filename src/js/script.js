@@ -133,3 +133,48 @@ btnNav.addEventListener('click', function (e) {
   e.preventDefault();
   navMenu.classList.toggle('header-box-active');
 });
+
+// smooth scrolling
+const navMain = document.querySelectorAll('.scrolling-nav');
+
+navMain.forEach(navMain =>
+  navMain.addEventListener('click', function (e) {
+    if (e.target.classList.contains('scrolling-link')) {
+      e.preventDefault();
+      const id = e.target.getAttribute('href');
+      document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
+    }
+  })
+);
+
+// reveal sections
+const allSections = document.querySelectorAll('.reveal');
+
+const revealSection = function (entries, observer) {
+  const [entry] = entries;
+
+  if (!entry.isIntersecting) return;
+  entry.target.classList.remove('reveal-hidden');
+  observer.unobserve(entry.target);
+};
+
+const sectionObserver = new IntersectionObserver(revealSection, {
+  root: null,
+  treshold: 0.1,
+});
+
+allSections.forEach(section => {
+  section.classList.add('reveal-hidden');
+  sectionObserver.observe(section);
+});
+
+// Hero elements revealing
+const headingPrimary = document.querySelector('.heading-primary');
+headingPrimary.classList.add('heading-primary-hidden');
+const image = document.querySelector('.hero-img-box');
+image.classList.add('image-hidden');
+
+window.addEventListener('load', function (e) {
+  image.classList.remove('image-hidden');
+  headingPrimary.classList.remove('heading-primary-hidden');
+});

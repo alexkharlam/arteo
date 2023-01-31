@@ -36,11 +36,21 @@
           <ion-icon class="icon-menu" name="menu-outline"></ion-icon>
           <ion-icon class="icon-menu" name="close-outline"></ion-icon>
         </a>
-        <ul class="main-nav">
-          <li><a class="main-nav-link" href="#">About us</a></li>
-          <li><a class="main-nav-link" href="#">Testimonials</a></li>
-          <li><a class="main-nav-link" href="#">Pricing</a></li>
-          <li><a class="main-nav-link" href="#">FAQ</a></li>
+        <ul class="main-nav scrolling-nav">
+          <li>
+            <a class="main-nav-link scrolling-link" href="#features"
+              >About us</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link scrolling-link" href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li>
+            <a class="main-nav-link scrolling-link" href="#pricing">Pricing</a>
+          </li>
+          <li><a class="main-nav-link scrolling-link" href="#faq">FAQ</a></li>
           <li>
             <a class="main-nav-cta" href="#sign-form">Become a student</a>
           </li>
@@ -79,7 +89,7 @@
       <section class="section-hero">
         <div class="hero">
           <div class="hero-text-box">
-            <h1 class="heading-primary">
+            <h1 class="heading-primary heading-primary-hidden">
               Vocal school that will make you <span>sing</span> like an artist
             </h1>
             <p class="hero-description">
@@ -103,7 +113,7 @@
         </div>
       </section>
 
-      <section class="section-features container">
+      <section class="section-features container reveal" id="features">
         <p class="sub-heading">How it works</p>
         <h2 class="heading-secondary">Learning music is easier than ever!</h2>
         <div class="features grid--3">
@@ -138,7 +148,7 @@
           </div>
         </div>
 
-        <h2 class="heading-tertiary align-center">
+        <h2 class="heading-tertiary align-center" id="testimonials">
           Hear What Arteo's Clients Say About Us
         </h2>
         <div class="slider">
@@ -204,7 +214,7 @@
         </div>
       </section>
 
-      <section class="section-prices">
+      <section class="section-prices reveal" id="pricing">
         <div class="container">
           <p class="sub-heading">prices</p>
           <h2 class="heading-secondary">Here's our programs</h2>
@@ -308,7 +318,7 @@
         </div>
       </section>
 
-      <section class="section-cta">
+      <section class="section-cta reveal">
         <div class="cta">
           <div class="form-box">
             <h3 class="form-title">Get your first vocal lesson for free!</h3>
@@ -351,7 +361,7 @@
         </div>
       </section>
 
-      <section class="section-faq">
+      <section class="section-faq reveal" id="faq">
         <div class="container">
           <p class="sub-heading">not sure?</p>
           <h2 class="heading-secondary">Most common questions</h2>
@@ -472,7 +482,7 @@
       </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer reveal">
       <div class="big-tel container">
         <p class="heading-tel">Want to ask something? Call us!</p>
         <a class="tel-link" href="tel:447975274957">+44 7975 274 957</a>
@@ -513,12 +523,16 @@
           <a href="#beta" class="footer-link">Privacy policy</a>
           <a href="#beta" class="footer-link">For Business</a>
         </nav>
-        <nav class="nav-col">
+        <nav class="nav-col scrolling-nav">
           <p class="heading-footer">Arteo</p>
-          <a href="#" class="footer-link">How it works</a>
-          <a href="#" class="footer-link">Testimonials</a>
-          <a href="#" class="footer-link">Price</a>
-          <a href="#" class="footer-link">FAQ</a>
+          <a href="#features" class="footer-link scrolling-link"
+            >How it works</a
+          >
+          <a href="#testimonials" class="footer-link scrolling-link"
+            >Testimonials</a
+          >
+          <a href="#pricing" class="footer-link scrolling-link">Price</a>
+          <a href="#faq" class="footer-link scrolling-link">FAQ</a>
         </nav>
         <nav class="nav-col">
           <a href="#sign-form" class="btn">Get free lesson!</a>

@@ -88,6 +88,14 @@
   }
 }
 
+.hero-img-box {
+  transition: all 0.7s ease-in;
+}
+
+.image-hidden {
+  opacity: 0;
+}
+
 // ***************************
 // SECTION FEATURES
 // ***************************
