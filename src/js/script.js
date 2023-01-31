@@ -147,26 +147,26 @@ navMain.forEach(navMain =>
   })
 );
 
-// reveal sections
-const allSections = document.querySelectorAll('.reveal');
+// reveal sections TODO: FIX
+// const allSections = document.querySelectorAll('.reveal');
 
-const revealSection = function (entries, observer) {
-  const [entry] = entries;
+// const revealSection = function (entries, observer) {
+//   const [entry] = entries;
 
-  if (!entry.isIntersecting) return;
-  entry.target.classList.remove('reveal-hidden');
-  observer.unobserve(entry.target);
-};
+//   if (!entry.isIntersecting) return;
+//   entry.target.classList.remove('reveal-hidden');
+//   observer.unobserve(entry.target);
+// };
 
-const sectionObserver = new IntersectionObserver(revealSection, {
-  root: null,
-  treshold: 0.1,
-});
+// const sectionObserver = new IntersectionObserver(revealSection, {
+//   root: null,
+//   treshold: 0.1,
+// });
 
-allSections.forEach(section => {
-  section.classList.add('reveal-hidden');
-  sectionObserver.observe(section);
-});
+// allSections.forEach(section => {
+//   section.classList.add('reveal-hidden');
+//   sectionObserver.observe(section);
+// });
 
 // Hero elements revealing
 const headingPrimary = document.querySelector('.heading-primary');
