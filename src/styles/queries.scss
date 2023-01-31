@@ -276,15 +276,20 @@
   // testimonials
   .slider,
   .slide {
-    height: 40rem;
+    height: 50rem;
+  }
+
+  .slider-btn {
+    top: auto;
+    bottom: 0;
   }
 
   .slider-btn--left {
-    left: -1rem;
+    left: 30%;
   }
 
   .slider-btn--right {
-    right: -1rem;
+    right: 30%;
   }
 
   .testimonial {
