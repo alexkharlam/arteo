@@ -141,6 +141,7 @@ navMain.forEach(navMain =>
   navMain.addEventListener('click', function (e) {
     if (e.target.classList.contains('scrolling-link')) {
       e.preventDefault();
+      navMenu.classList.remove('header-box-active');
       const id = e.target.getAttribute('href');
       document.querySelector(id).scrollIntoView({ behavior: 'smooth' });
     }

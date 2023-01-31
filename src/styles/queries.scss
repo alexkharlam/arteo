@@ -276,7 +276,12 @@
   // testimonials
   .slider,
   .slide {
-    height: 50rem;
+    height: 45rem;
+  }
+
+  .slide {
+    align-items: flex-start;
+    padding-top: 3.2rem;
   }
 
   .slider-btn {
@@ -405,5 +410,16 @@
 
   .nav-col {
     gap: 3.2rem;
+  }
+}
+
+// VERY SMALL PHONES (BELOW 370px)
+@media (max-width: 24em) {
+  .big-tel {
+    .tel-link,
+    .tel-link:link,
+    .tel-link:visited {
+      font-size: 4rem;
+    }
   }
 }
