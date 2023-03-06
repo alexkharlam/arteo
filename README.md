@@ -1,23 +1,20 @@
-# Arteo
+# Arteo Vocal School Website
 
-## About project
+Arteo is a fictional vocal school website built using pure JavaScript, SCSS, HTML, and Parcel bundler. It features an animated slider, dropdown menu, and a popup window with a form. The website is also adaptive and can be viewed on mobile devices.
 
-Landing website for fictional company
+[View the website live](https://arteo.netlify.app/)
 
-## What used
+## Technologies Used
 
-Html, css (sass with syntax scss), pure javascript, Parcel for bundling, compressing with Parcel built in tools
+- JavaScript
+- SCSS
+- HTML
+- Parcel
 
-## Navigation through the project
+## License
 
-### CSS
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-borderPlate - just drops some default styles
-general - file with general reusable styles
-main - file with all different styles
-queries - file with media queries
-index.scss - brings together everything (style path of index.html)
+## Contact
 
-### Parcel
-
-source for bundler - index.html in the parent folder
+If you have any questions or suggestions for the website, feel free to contact me
